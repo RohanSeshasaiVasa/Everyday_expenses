@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker &#x1F4B8</title>
+    <script src="script.js" defer></script>
+    <script src="cursor.js" defer></script>
+    <script src="particles.js" defer></script>
+    <script src="bubbles.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    <button id="theme-btn">🌙</button>
+    <h1>
+        Expense Tracker <span id="wiggle">&#x1F4B8</span>
+    </h1>
+    <div class="container">
+    <div class="main">   
+    <p>Amount</p>
+        <input type="number" id="amount">
+        <div id="keypad">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+            <button type="button" class="zero">0</button>
+            <button type="button" class="backspace">&#9003;</button>
+        </div>
+    <p>Category</p>
+        <select id="category">
+            <option value="food">Food</option>
+            <option value="travel">Travel</option>
+            <option value="purchases">Purchases</option>
+            <option value="others">Others</option>
+        </select>
+    <p>Description</p>
+        <input type="text" id="description" placeholder="Lunch with friends">
+        <button id="amount-btn" type="button">Enter</button>
+        <div class="output"></div>
+        <div id="totals"></div>
+        <button id="reset-btn">&#x21BB;</button>
+    </div>
+        <div class="side">
+            <h2 id="log-title">Logs</h2>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="food">Food</option>
+                    <option value="travel">Travel</option>
+                    <option value="purchases">Purchases</option>
+                    <option value="others">Others</option>
+                </select>
+                <input type="text" id="search" placeholder="Search for any expense (type the description)">
+            <ul id="log"></ul>
+        </div>
+    </div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div id="bubble-score">🫧 Popped: 0</div>
+    <footer>
+        Made by Rohan Seshasai with &#x1F496;
+    </footer>
+</body>
+</html>
